@@ -1,0 +1,42 @@
+{
+  "name": "@woubuc/seq",
+  "description": "Wraps an async (or other Promise returning) function to prevent it being executed in parallel",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Wouter Buckens <woubuc@hey.com>",
+  "main": "dist/seq.js",
+  "types": "dist/seq.d.ts",
+  "homepage": "https://github.com/woubuc/seq/blob/master/README.md",
+  "repository": "github:woubuc/seq",
+  "bugs": "https://github.com/woubuc/seq/issues",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@woubuc/deferred": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "promise",
+    "promises",
+    "async",
+    "await",
+    "parallel",
+    "sequential",
+    "sequence",
+    "once",
+    "single",
+    "debounce",
+    "limit"
+  ]
+}
