@@ -41,9 +41,9 @@ const wrapped = seq(async () => {
   return result.json();
 });
 
-// You can now call the wrapped function multiple times, but only one `fetch`
-// request will occur at any time. Each call to `wrapped()` below will resolve
-// with the same data.
+// You can now call the wrapped function multiple times, but
+// only one `fetch` request will occur at any time. Each call
+// to `wrapped()` below will resolve with the same data.
 wrapped();
 wrapped();
 wrapped();
@@ -56,13 +56,15 @@ const wrapped = seq(async (id : number) => {
 	return result.json();
 });
 
-// Just like before, these first two calls will only invoke the inner function
-// once and so only one `fetch` request will occur with ID `1`.
+// Just like before, these first two calls will only invoke
+// the inner function once and so only one `fetch` request
+// will occur with ID `1`.
 wrapped(1);
 wrapped(1);
 
-// However, the calls below will cause a second `fetch` request to occur because
-// the wrapped function is called with a different value.
+// However, the calls below will cause a second `fetch`
+// request to occur because the wrapped function is called
+// with a different value.
 wrapped(2);
 wrapped(2);
 ```
